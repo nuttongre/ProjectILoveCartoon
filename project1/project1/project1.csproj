@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E497FDF6-A4A6-4594-92C0-6DA83A04FD14}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>project1</RootNamespace>
+    <AssemblyName>project1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addbook.aspx" />
+    <Content Include="addpromotion.aspx" />
+    <Content Include="back.aspx" />
+    <Content Include="book.aspx" />
+    <Content Include="bookadmin.aspx" />
+    <Content Include="HomeAdmin.aspx" />
+    <Content Include="js\jquery-3.1.1.js" />
+    <Content Include="login.aspx" />
+    <Content Include="morris\morris.min.js" />
+    <Content Include="morris\raphael.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\Cloud-Bold.otf" />
+    <Content Include="fonts\Cloud-Light.otf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="home.aspx" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.1.1.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="pic\A11.jpg" />
+    <Content Include="pic\A12.jpg" />
+    <Content Include="pic\A13.jpg" />
+    <Content Include="pic\A14.jpg" />
+    <Content Include="pic\A15.jpg" />
+    <Content Include="pic\A21.jpg" />
+    <Content Include="pic\A22.jpg" />
+    <Content Include="pic\A23.jpg" />
+    <Content Include="pic\A24.jpg" />
+    <Content Include="pic\A25.jpg" />
+    <Content Include="pic\A31.jpg" />
+    <Content Include="pic\A32.jpg" />
+    <Content Include="pic\A33.jpg" />
+    <Content Include="pic\A34.jpg" />
+    <Content Include="pic\A35.jpg" />
+    <Content Include="pic\A41.jpg" />
+    <Content Include="pic\A42.jpg" />
+    <Content Include="pic\A43.jpg" />
+    <Content Include="pic\A44.jpg" />
+    <Content Include="pic\A45.jpg" />
+    <Content Include="pic\A51.jpg" />
+    <Content Include="pic\A52.jpg" />
+    <Content Include="pic\A53.jpg" />
+    <Content Include="pic\A54.jpg" />
+    <Content Include="pic\A55.jpg" />
+    <Content Include="pic\A61.jpg" />
+    <Content Include="pic\A62.jpg" />
+    <Content Include="pic\A63.jpg" />
+    <Content Include="pic\A64.jpg" />
+    <Content Include="pic\A65.jpg" />
+    <Content Include="pic\bleach-manga-188761.jpg" />
+    <Content Include="pic\C11.jpg" />
+    <Content Include="pic\C12.jpg" />
+    <Content Include="pic\C13.jpg" />
+    <Content Include="pic\C14.jpg" />
+    <Content Include="pic\C15.jpg" />
+    <Content Include="pic\C21.jpg" />
+    <Content Include="pic\C22.jpg" />
+    <Content Include="pic\C23.jpg" />
+    <Content Include="pic\C24.jpg" />
+    <Content Include="pic\C25.jpg" />
+    <Content Include="pic\C31.jpg" />
+    <Content Include="pic\C32.jpg" />
+    <Content Include="pic\C33.jpg" />
+    <Content Include="pic\C34.jpg" />
+    <Content Include="pic\C35.jpg" />
+    <Content Include="pic\C41.jpg" />
+    <Content Include="pic\C42.jpg" />
+    <Content Include="pic\C43.jpg" />
+    <Content Include="pic\C44.jpg" />
+    <Content Include="pic\C45.jpg" />
+    <Content Include="pic\C51.jpg" />
+    <Content Include="pic\C52.jpg" />
+    <Content Include="pic\C53.jpg" />
+    <Content Include="pic\C54.jpg" />
+    <Content Include="pic\C55.jpg" />
+    <Content Include="pic\D11.jpg" />
+    <Content Include="pic\D12.jpg" />
+    <Content Include="pic\D13.jpg" />
+    <Content Include="pic\D14.jpg" />
+    <Content Include="pic\D15.jpg" />
+    <Content Include="pic\D21.jpg" />
+    <Content Include="pic\D22.jpg" />
+    <Content Include="pic\D23.jpg" />
+    <Content Include="pic\D24.jpg" />
+    <Content Include="pic\D25.jpg" />
+    <Content Include="pic\D31.jpg" />
+    <Content Include="pic\D32.jpg" />
+    <Content Include="pic\D33.jpg" />
+    <Content Include="pic\D34.jpg" />
+    <Content Include="pic\D35.jpg" />
+    <Content Include="pic\D41.jpg" />
+    <Content Include="pic\D42.jpg" />
+    <Content Include="pic\D43.jpg" />
+    <Content Include="pic\D44.jpg" />
+    <Content Include="pic\D45.jpg" />
+    <Content Include="pic\D51.jpg" />
+    <Content Include="pic\D52.jpg" />
+    <Content Include="pic\D53.jpg" />
+    <Content Include="pic\D54.jpg" />
+    <Content Include="pic\D55.jpg" />
+    <Content Include="pic\footer.jpg" />
+    <Content Include="pic\H11.jpg" />
+    <Content Include="pic\H12.jpg" />
+    <Content Include="pic\H13.jpg" />
+    <Content Include="pic\H14.jpg" />
+    <Content Include="pic\H15.jpg" />
+    <Content Include="pic\H21.jpg" />
+    <Content Include="pic\H22.jpg" />
+    <Content Include="pic\H23.jpg" />
+    <Content Include="pic\H24.jpg" />
+    <Content Include="pic\H25.jpg" />
+    <Content Include="pic\H31.jpg" />
+    <Content Include="pic\H32.jpg" />
+    <Content Include="pic\H33.jpg" />
+    <Content Include="pic\H34.jpg" />
+    <Content Include="pic\H35.jpg" />
+    <Content Include="pic\H41.jpg" />
+    <Content Include="pic\H42.jpg" />
+    <Content Include="pic\H43.jpg" />
+    <Content Include="pic\H44.jpg" />
+    <Content Include="pic\H45.jpg" />
+    <Content Include="pic\H51.jpg" />
+    <Content Include="pic\H52.jpg" />
+    <Content Include="pic\H53.jpg" />
+    <Content Include="pic\H54.jpg" />
+    <Content Include="pic\H55.jpg" />
+    <Content Include="pic\logoH.png" />
+    <Content Include="pic\logoweb.png" />
+    <Content Include="pic\onepiece2.jpg" />
+    <Content Include="picpro\Promotion1.png" />
+    <Content Include="picpro\Promotion2.png" />
+    <Content Include="pic\R11.jpg" />
+    <Content Include="pic\R12.jpg" />
+    <Content Include="pic\R13.jpg" />
+    <Content Include="pic\R14.jpg" />
+    <Content Include="pic\R15.jpg" />
+    <Content Include="pic\R21.jpg" />
+    <Content Include="pic\R22.jpg" />
+    <Content Include="pic\R23.jpg" />
+    <Content Include="pic\R24.jpg" />
+    <Content Include="pic\R25.jpg" />
+    <Content Include="pic\R31.jpg" />
+    <Content Include="pic\R32.jpg" />
+    <Content Include="pic\R33.jpg" />
+    <Content Include="pic\R34.jpg" />
+    <Content Include="pic\R35.jpg" />
+    <Content Include="pic\R41.jpg" />
+    <Content Include="pic\R42.jpg" />
+    <Content Include="pic\R43.jpg" />
+    <Content Include="pic\R44.jpg" />
+    <Content Include="pic\R45.jpg" />
+    <Content Include="pic\R51.jpg" />
+    <Content Include="pic\R52.jpg" />
+    <Content Include="pic\R53.jpg" />
+    <Content Include="pic\R54.jpg" />
+    <Content Include="pic\R55.jpg" />
+    <Content Include="pic\นารุโตะ.jpg" />
+    <Content Include="register.aspx" />
+    <Content Include="rend.aspx" />
+    <Content Include="status.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addbook.aspx.cs">
+      <DependentUpon>addbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addbook.aspx.designer.cs">
+      <DependentUpon>addbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addpromotion.aspx.cs">
+      <DependentUpon>addpromotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addpromotion.aspx.designer.cs">
+      <DependentUpon>addpromotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="back.aspx.cs">
+      <DependentUpon>back.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="back.aspx.designer.cs">
+      <DependentUpon>back.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="book.aspx.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book.aspx.designer.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookadmin.aspx.cs">
+      <DependentUpon>bookadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookadmin.aspx.designer.cs">
+      <DependentUpon>bookadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAdmin.aspx.cs">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeAdmin.aspx.designer.cs">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rend.aspx.cs">
+      <DependentUpon>rend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rend.aspx.designer.cs">
+      <DependentUpon>rend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="status.aspx.cs">
+      <DependentUpon>status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="status.aspx.designer.cs">
+      <DependentUpon>status.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56529</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56529/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
